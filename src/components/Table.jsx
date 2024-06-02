@@ -1,8 +1,7 @@
 'use client'
 import { Data } from '../../public/MOCK_DATA.json';
 import React from "react";
-import { useTable } from "react-table";
-
+import { useTable, useSortBy, usePagination } from "react-table";
 
 
 function App() {
@@ -40,16 +39,23 @@ function App() {
     getTableProps,
     getTableBodyProps,
     headerGroups,
-    rows,
-    prepareRow
-  } = useTable({ columns, data: records });
+    page,
+    prepareRow,
+    nextPage,
+    previousPage,
+    canPreviousPage,
+    canNextPage,
+    state:{pageIndex},
+    pageCount,
+    gotoPage
+  } = useTable({ columns, data: records }, useSortBy, usePagination);
 
   return (
     <div className="App">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <input
           type="text"
-          className="w-full p-2 mb-4 bg-gray-200 rounded-lg shadow-md"
+          className="w-full p-2 mb-7 bg-gray-300 rounded-lg shadow-md"
           onChange={filter}
           placeholder="Search by name..."
         />
@@ -61,24 +67,28 @@ function App() {
             {headerGroups.map((headerGroup) => (
               <tr
                 {...headerGroup.getHeaderGroupProps()}
-                className="bg-blue-900 text-white"
+                className="bg-blue-900 text-white "
               >
                 {headerGroup.headers.map((column) => (
                   <th
-                    {...column.getHeaderProps()}
+                    {...column.getHeaderProps(column.getSortByToggleProps())}
                     className="p-3 text-left"
                   >
                     {column.render("Header")}
+                    {
+                      column.isSorted && <span>{column.isSortedDesc ? " 🔽" : " 🔼"}</span>
+
+                    }
                   </th>
                 ))}
               </tr>
             ))}
           </thead>
           <tbody {...getTableBodyProps()}>
-            {rows.map((row) => {
+            {page.map((row) => {
               prepareRow(row);
               return (
-                <tr {...row.getRowProps()} className=" hover:bg-slate-50">
+                <tr {...row.getRowProps()} className="hover:bg-slate-50">
                   {row.cells.map((cell) => (
                     <td
                       {...cell.getCellProps()}
@@ -93,10 +103,17 @@ function App() {
             })}
           </tbody>
         </table>
+
+        <div className="flex flex-col sm:flex-row justify-center items-center mt-8">
+          <button disabled={pageIndex===0} onClick={()=>gotoPage(0)} className="px-5 py-2 rounded-lg bg-blue-800 hover:bg-blue-400 text-white mb-4 sm:mb-0 sm:mr-4 disabled:cursor-not-allowed">First</button>
+          <button disabled={!canPreviousPage} className="px-5 py-2 rounded-lg bg-purple-600 hover:bg-purple-400 text-white mb-4 sm:mb-0 sm:mr-4 disabled:cursor-not-allowed" onClick={previousPage}>Prev</button>
+          <span className="m-2">{pageIndex+1} of {pageCount}</span>
+          <button disabled={!canNextPage} className="px-5 py-2 rounded-lg bg-purple-600 hover:bg-purple-400 text-white mb-4 sm:mb-0 sm:ml-4 disabled:cursor-not-allowed" onClick={nextPage}>Next</button>
+          <button disabled={pageIndex === pageCount - 1} onClick={()=>gotoPage(pageCount-1)} className="px-5 py-2 rounded-lg bg-blue-800 hover:bg-blue-400 text-white sm:ml-4 disabled:cursor-not-allowed">Last</button>
+        </div>
       </div>
     </div>
   );
 }
 
 export default App;
-
