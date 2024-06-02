@@ -125,12 +125,12 @@ function App() {
           >
             <thead>
               {headerGroups.map((headerGroup) => (
-                <tr
+                <tr key={id}
                   {...headerGroup.getHeaderGroupProps()}
                   className="bg-blue-900 text-white "
                 >
                   {headerGroup.headers.map((column) => (
-                    <th
+                    <th key={id}
                       {...column.getHeaderProps(column.getSortByToggleProps())}
                       className="p-3 text-left"
                     >
@@ -147,9 +147,9 @@ function App() {
               {page.map((row) => {
                 prepareRow(row);
                 return (
-                  <tr {...row.getRowProps()} className="hover:bg-slate-50">
+                  <tr {...row.getRowProps()} key={id} className="hover:bg-slate-50">
                     {row.cells.map((cell) => (
-                      <td
+                      <td key={id}
                         {...cell.getCellProps()}
                         className="p-4"
                         style={{ backgroundColor: "#E2F0CB" }}
