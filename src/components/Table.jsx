@@ -3,7 +3,6 @@ import { Data } from '../../public/MOCK_DATA.json';
 import React, { useMemo, useState } from "react";
 import { useTable, useSortBy, usePagination } from "react-table";
 
-
 function App() {
   
   const data = useMemo(() => Data, []);
@@ -54,7 +53,6 @@ function App() {
   
     setRecords(filteredRecords); 
   };
-  
 
   const {
     getTableProps,
@@ -82,7 +80,7 @@ function App() {
           placeholder="Search by name..."
         />
 
-        <h1 className=" text-pretty text-2xl">Filter:</h1>
+        <h1 className="text-pretty text-2xl">Filter:</h1>
 
         <div className="flex flex-col sm:flex-row justify-between items-center mb-8">
           <div className="w-full sm:w-auto mb-4 sm:mb-0">
@@ -120,51 +118,51 @@ function App() {
           </button>
         </div>
 
-
-        <table
-          {...getTableProps()}
-          className="table-fixed w-full rounded-lg overflow-hidden shadow-md"
-        >
-          <thead>
-            {headerGroups.map((headerGroup) => (
-              <tr
-                {...headerGroup.getHeaderGroupProps()}
-                className="bg-blue-900 text-white "
-              >
-                {headerGroup.headers.map((column) => (
-                  <th
-                    {...column.getHeaderProps(column.getSortByToggleProps())}
-                    className="p-3 text-left"
-                  >
-                    {column.render("Header")}
-                    {
-                      column.isSorted && <span>{column.isSortedDesc ? " 🔽" : " 🔼"}</span>
-
-                    }
-                  </th>
-                ))}
-              </tr>
-            ))}
-          </thead>
-          <tbody {...getTableBodyProps()}>
-            {page.map((row) => {
-              prepareRow(row);
-              return (
-                <tr {...row.getRowProps()} className="hover:bg-slate-50">
-                  {row.cells.map((cell) => (
-                    <td
-                      {...cell.getCellProps()}
-                      className="p-4"
-                      style={{ backgroundColor: "#E2F0CB" }}
+        <div className="table-responsive overflow-x-auto"> {/* Add a container for table responsiveness */}
+          <table
+            {...getTableProps()}
+            className="table-fixed w-full rounded-lg overflow-hidden shadow-md"
+          >
+            <thead>
+              {headerGroups.map((headerGroup) => (
+                <tr
+                  {...headerGroup.getHeaderGroupProps()}
+                  className="bg-blue-900 text-white "
+                >
+                  {headerGroup.headers.map((column) => (
+                    <th
+                      {...column.getHeaderProps(column.getSortByToggleProps())}
+                      className="p-3 text-left"
                     >
-                      {cell.render("Cell")}
-                    </td>
+                      {column.render("Header")}
+                      {
+                        column.isSorted && <span>{column.isSortedDesc ? " 🔽" : " 🔼"}</span>
+                      }
+                    </th>
                   ))}
                 </tr>
-              );
-            })}
-          </tbody>
-        </table>
+              ))}
+            </thead>
+            <tbody {...getTableBodyProps()}>
+              {page.map((row) => {
+                prepareRow(row);
+                return (
+                  <tr {...row.getRowProps()} className="hover:bg-slate-50">
+                    {row.cells.map((cell) => (
+                      <td
+                        {...cell.getCellProps()}
+                        className="p-4"
+                        style={{ backgroundColor: "#E2F0CB" }}
+                      >
+                        {cell.render("Cell")}
+                      </td>
+                    ))}
+                  </tr>
+                );
+              })}
+            </tbody>
+          </table>
+        </div>
 
         <div className="flex flex-col sm:flex-row justify-center items-center mt-8">
           <button disabled={pageIndex===0} onClick={()=>gotoPage(0)} className="px-5 py-2 rounded-lg bg-blue-800 hover:bg-blue-400 text-white mb-4 sm:mb-0 sm:mr-4 disabled:cursor-not-allowed">First</button>
