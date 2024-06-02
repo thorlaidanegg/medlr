@@ -215,7 +215,746 @@
 {"id":212,"name":"ADVANCED CELL BOOSTING EX TONER","price":2005,"manufacturer":"NATURE REPUBLIC CO., LTD."},
 {"id":213,"name":"Minocin Kit","price":4670,"manufacturer":"Triax Pharmaceuticals, LLC"},
 {"id":214,"name":"DIVALPROEX SODIUM EXTENDED-RELEASE","price":3993,"manufacturer":"Cardinal Health"},
-{"id":215,"name":"Zohydro","price":1900,"manufacturer":"Zogenix, Inc."}
+{"id":215,"name":"Zohydro","price":1900,"manufacturer":"Zogenix, Inc."},
+{
+    "id": 1,
+    "name": "Nicotine polacrilex",
+    "price": 3121,
+    "manufacturer": "Cantrell Drug Company"
+  },
+  {
+    "id": 2,
+    "name": "Monistat 3 Combination Pack",
+    "price": 2979,
+    "manufacturer": "Pharmacia and Upjohn Company"
+  },
+  {
+    "id": 3,
+    "name": "Neurospora intermedia",
+    "price": 3421,
+    "manufacturer": "Cantrell Drug Company"
+  },
+  {
+    "id": 4,
+    "name": "Orajel Instant Pain Relief",
+    "price": 4422,
+    "manufacturer": "Cantrell Drug Company"
+  },
+  {
+    "id": 5,
+    "name": "LBEL Couleur Luxe Rouge Amplifier XP amplifying SPF 15",
+    "price": 4835,
+    "manufacturer": "Cardinal Health"
+  },
+  {
+    "id": 6,
+    "name": "Neuro Balance Pro",
+    "price": 1589,
+    "manufacturer": "Mylan Institutional Inc."
+  },
+  {
+    "id": 7,
+    "name": "Mometasone Furoate",
+    "price": 4598,
+    "manufacturer": "Mylan Institutional Inc."
+  },
+  {
+    "id": 8,
+    "name": "Neuro Balance Pro",
+    "price": 3837,
+    "manufacturer": "Steris Corporation"
+  },
+  {
+    "id": 9,
+    "name": "Relax",
+    "price": 4831,
+    "manufacturer": "Mylan Institutional Inc."
+  },
+  {
+    "id": 10,
+    "name": "Neurospora intermedia",
+    "price": 3235,
+    "manufacturer": "Pfizer Laboratories Div Pfizer Inc"
+  },
+  {
+    "id": 11,
+    "name": "Caverject",
+    "price": 4535,
+    "manufacturer": "Antigen Laboratories, Inc."
+  },
+  {
+    "id": 12,
+    "name": "LBEL",
+    "price": 2787,
+    "manufacturer": "Sandoz Inc"
+  },
+  {
+    "id": 13,
+    "name": "Suave",
+    "price": 1785,
+    "manufacturer": "Rite Aid Corporation"
+  },
+  {
+    "id": 14,
+    "name": "Doxepin Hydrochloride",
+    "price": 1405,
+    "manufacturer": "Steris Corporation"
+  },
+  {
+    "id": 15,
+    "name": "Metronidazole",
+    "price": 2283,
+    "manufacturer": "Antigen Laboratories, Inc."
+  },
+  {
+    "id": 16,
+    "name": "Secret",
+    "price": 4957,
+    "manufacturer": "Preferred Pharmaceuticals,Inc."
+  },
+  {
+    "id": 17,
+    "name": "Argatroban",
+    "price": 3256,
+    "manufacturer": "Glenmark Generics Inc., USA"
+  },
+  {
+    "id": 18,
+    "name": "Cyclophosphamide",
+    "price": 2522,
+    "manufacturer": "Antigen Laboratories, Inc."
+  },
+  {
+    "id": 19,
+    "name": "Childrens Pain Relief",
+    "price": 3197,
+    "manufacturer": "Wockhardt USA LLC."
+  },
+  {
+    "id": 20,
+    "name": "Envirostat",
+    "price": 4701,
+    "manufacturer": "Cardinal Health"
+  },
+
+  {
+    "id": 216,
+    "name": "Bactroban",
+    "price": 2123,
+    "manufacturer": "Bausch & Lomb Incorporated"
+  },
+  {
+    "id": 217,
+    "name": "Olanzapine",
+    "price": 3205,
+    "manufacturer": "American Health Packaging"
+  },
+  {
+    "id": 218,
+    "name": "Phenylephrine Hydrochloride",
+    "price": 3867,
+    "manufacturer": "Eagle Pharmaceuticals, Inc."
+  },
+  {
+    "id": 219,
+    "name": "Bupropion Hydrochloride",
+    "price": 2954,
+    "manufacturer": "Preferred Pharmaceuticals, Inc."
+  },
+  {
+    "id": 220,
+    "name": "Perindopril Erbumine",
+    "price": 4112,
+    "manufacturer": "Lupin Pharmaceuticals, Inc"
+  },
+  {
+    "id": 221,
+    "name": "SENSAI FLUID FINISH FF102",
+    "price": 1933,
+    "manufacturer": "Nelco Laboratories, Inc."
+  },
+  {
+    "id": 222,
+    "name": "Argatroban",
+    "price": 2635,
+    "manufacturer": "American Health Packaging"
+  },
+  {
+    "id": 223,
+    "name": "Childrens",
+    "price": 2967,
+    "manufacturer": "American Health Packaging"
+  },
+  {
+    "id": 224,
+    "name": "Ceramide Lift And Firm Makeup Broad Sprectrum Sunscreen SPF 15 Sandstone",
+    "price": 4379,
+    "manufacturer": "Cardinal Health"
+  },
+  {
+    "id": 225,
+    "name": "Relax",
+    "price": 2345,
+    "manufacturer": "Tropical Seas, Inc."
+  },
+  {
+    "id": 226,
+    "name": "BareMinerals Golden Tan matte",
+    "price": 4978,
+    "manufacturer": "Bare Escentuals Beauty Inc."
+  },
+  {
+    "id": 227,
+    "name": "Oxygen",
+    "price": 1567,
+    "manufacturer": "BayCare Home Care, Inc."
+  },
+  {
+    "id": 228,
+    "name": "Amitriptyline Hydrochloride",
+    "price": 3945,
+    "manufacturer": "McKesson"
+  },
+  {
+    "id": 229,
+    "name": "LBEL",
+    "price": 3721,
+    "manufacturer": "Ventura International LTD."
+  },
+  {
+    "id": 230,
+    "name": "Phenylephrine Hydrochloride",
+    "price": 3598,
+    "manufacturer": "Mylan Institutional Inc."
+  },
+  {
+    "id": 231,
+    "name": "Cyclobenzaprine Hydrochloride",
+    "price": 1845,
+    "manufacturer": "Preferred Pharmaceuticals, Inc."
+  },
+  {
+    "id": 232,
+    "name": "Gemcitabine Hydrochloride",
+    "price": 1173,
+    "manufacturer": "Bausch & Lomb Incorporated"
+  },
+  {
+    "id": 233,
+    "name": "Caverject",
+    "price": 4485,
+    "manufacturer": "Antigen Laboratories, Inc."
+  },
+  {
+    "id": 234,
+    "name": "Morphine Sulfate",
+    "price": 3732,
+    "manufacturer": "Eagle Pharmaceuticals, Inc."
+  },
+  {
+    "id": 235,
+    "name": "Magnesium Citrate",
+    "price": 3296,
+    "manufacturer": "Steris Corporation"
+  },
+  {
+    "id": 236,
+    "name": "Haloperidol",
+    "price": 4392,
+    "manufacturer": "Steris Corporation"
+  },
+  {
+    "id": 237,
+    "name": "Up and Up Miconazole 3",
+    "price": 2619,
+    "manufacturer": "Target Corporation"
+  },
+  {
+    "id": 238,
+    "name": "BareMinerals Golden Tan matte",
+    "price": 2285,
+    "manufacturer": "Bare Escentuals Beauty Inc."
+  },
+  {
+    "id": 239,
+    "name": "Hydrochlorothiazide",
+    "price": 4832,
+    "manufacturer": "REMEDYREPACK INC."
+  },
+  {
+    "id": 240,
+    "name": "Nicotine polacrilex",
+    "price": 3896,
+    "manufacturer": "Preferred Pharmaceuticals, Inc."
+  },
+  {
+    "id": 241,
+    "name": "Paroxetine",
+    "price": 1817,
+    "manufacturer": "Cantrell Drug Company"
+  },
+  {
+    "id": 242,
+    "name": "Albuterol Sulfate",
+    "price": 4098,
+    "manufacturer": "REMEDYREPACK INC."
+  },
+  {
+    "id": 243,
+    "name": "Perindopril Erbumine",
+    "price": 1377,
+    "manufacturer": "Preferred Pharmaceuticals, Inc."
+  },
+  {
+    "id": 244,
+    "name": "Valacyclovir Hydrochloride",
+    "price": 4398,
+    "manufacturer": "Rite Aid Corporation"
+  },
+  {
+    "id": 245,
+    "name": "Cefazolin",
+    "price": 4687,
+    "manufacturer": "Eagle Pharmaceuticals, Inc."
+  },
+  {
+    "id": 246,
+    "name": "Terbinafine Hydrochloride",
+    "price": 3942,
+    "manufacturer": "Bausch & Lomb Incorporated"
+  },
+  {
+    "id": 247,
+    "name": "Head and Shoulders",
+    "price": 3103,
+    "manufacturer": "Ventura International LTD."
+  },
+  {
+    "id": 248,
+    "name": "Argatroban",
+    "price": 1734,
+    "manufacturer": "American Health Packaging"
+  },
+  {
+    "id": 249,
+    "name": "Gemfibrozil",
+    "price": 4547,
+    "manufacturer": "Bausch & Lomb Incorporated"
+  },
+  {
+    "id": 250,
+    "name": "Levofloxacin",
+    "price": 3365,
+    "manufacturer": "Eagle Pharmaceuticals, Inc."
+  },
+  {
+    "id": 251,
+    "name": "Neurospora intermedia",
+    "price": 1732,
+    "manufacturer": "Mylan Institutional Inc."
+  },
+  {
+    "id": 252,
+    "name": "Cyclophosphamide",
+    "price": 2012,
+    "manufacturer": "Preferred Pharmaceuticals, Inc."
+  },
+  {
+    "id": 253,
+    "name": "Relax",
+    "price": 2476,
+    "manufacturer": "Tropical Seas, Inc."
+  },
+  {
+    "id": 254,
+    "name": "Dextromethorphan Hydrobromide, Guaifenesin, Phenylephrine Hydrochloride",
+    "price": 4187,
+    "manufacturer": "American Health Packaging"
+  },
+  {
+    "id": 255,
+    "name": "Dextromethorphan Hydrobromide, Guaifenesin, Phenylephrine Hydrochloride",
+    "price": 2123,
+    "manufacturer": "Mylan Institutional Inc."
+  },
+  {
+    "id": 256,
+    "name": "Pregabalin",
+    "price": 3754,
+    "manufacturer": "Bausch & Lomb Incorporated"
+  },
+  {
+    "id": 257,
+    "name": "Phenylephrine Hydrochloride",
+    "price": 3914,
+    "manufacturer": "Preferred Pharmaceuticals, Inc."
+  },
+  {
+    "id": 258,
+    "name": "Terbinafine Hydrochloride",
+    "price": 4812,
+    "manufacturer": "Bausch & Lomb Incorporated"
+  },
+  {
+    "id": 259,
+    "name": "Cyclobenzaprine Hydrochloride",
+    "price": 2897,
+    "manufacturer": "Preferred Pharmaceuticals, Inc."
+  },
+  {
+    "id": 260,
+    "name": "Hydrochlorothiazide",
+    "price": 4213,
+    "manufacturer": "REMEDYREPACK INC."
+  },
+  {
+    "id": 261,
+    "name": "Lbel",
+    "price": 4795,
+    "manufacturer": "Ventura International LTD."
+  },
+  {
+    "id": 262,
+    "name": "Lbel",
+    "price": 2987,
+    "manufacturer": "Cardinal Health"
+  },
+  {
+    "id": 263,
+    "name": "Hydrochlorothiazide",
+    "price": 3932,
+    "manufacturer": "Cardinal Health"
+  },
+  {
+    "id": 264,
+    "name": "Bactroban",
+    "price": 4056,
+    "manufacturer": "Bausch & Lomb Incorporated"
+  },
+  {
+    "id": 265,
+    "name": "SILVER SULFADIAZINE",
+    "price": 3379,
+    "manufacturer": "Ventura International LTD."
+  },
+  {
+    "id": 266,
+    "name": "Zantac",
+    "price": 3712,
+    "manufacturer": "Preferred Pharmaceuticals, Inc."
+  },
+  {
+    "id": 267,
+    "name": "Cyclosporine",
+    "price": 4097,
+    "manufacturer": "Taro Pharmaceuticals U.S.A., Inc."
+  },
+  {
+    "id": 268,
+    "name": "Bactroban",
+    "price": 4567,
+    "manufacturer": "Bausch & Lomb Incorporated"
+  },
+  {
+    "id": 269,
+    "name": "Metformin Hydrochloride",
+    "price": 2129,
+    "manufacturer": "Preferred Pharmaceuticals, Inc."
+  },
+  {
+    "id": 270,
+    "name": "Propafenone Hydrochloride",
+    "price": 2786,
+    "manufacturer": "Cantrell Drug Company"
+  },
+  {
+    "id": 271,
+    "name": "Paroxetine",
+    "price": 3405,
+    "manufacturer": "Cantrell Drug Company"
+  },
+  {
+    "id": 272,
+    "name": "Duloxetine Hydrochloride",
+    "price": 4432,
+    "manufacturer": "McKesson"
+  },
+  {
+    "id": 273,
+    "name": "TOLNAFTATE",
+    "price": 3632,
+    "manufacturer": "Ventura International LTD."
+  },
+  {
+    "id": 274,
+    "name": "Gemcitabine Hydrochloride",
+    "price": 4178,
+    "manufacturer": "American Health Packaging"
+  },
+  {
+    "id": 275,
+    "name": "Valsartan and Hydrochlorothiazide",
+    "price": 2912,
+    "manufacturer": "Cardinal Health"
+  },
+  {
+    "id": 276,
+    "name": "Up and Up Lansoprazole",
+    "price": 1739,
+    "manufacturer": "Target Corporation"
+  },
+  {
+    "id": 277,
+    "name": "Cyclophosphamide",
+    "price": 3432,
+    "manufacturer": "Steris Corporation"
+  },
+  {
+    "id": 278,
+    "name": "Cetirizine Hydrochloride",
+    "price": 4123,
+    "manufacturer": "Preferred Pharmaceuticals, Inc."
+  },
+  {
+    "id": 279,
+    "name": "Valacyclovir Hydrochloride",
+    "price": 3412,
+    "manufacturer": "Rite Aid Corporation"
+  },
+  {
+    "id": 280,
+    "name": "Citalopram",
+    "price": 2976,
+    "manufacturer": "Preferred Pharmaceuticals, Inc."
+  },
+  {
+    "id": 281,
+    "name": "Lbel",
+    "price": 4683,
+    "manufacturer": "Ventura International LTD."
+  },
+  {
+    "id": 282,
+    "name": "Cyclophosphamide",
+    "price": 4176,
+    "manufacturer": "McKesson"
+  },
+  {
+    "id": 283,
+    "name": "Risperidone",
+    "price": 3487,
+    "manufacturer": "Cantrell Drug Company"
+  },
+  {
+    "id": 284,
+    "name": "Trihexyphenidyl Hydrochloride",
+    "price": 4823,
+    "manufacturer": "Preferred Pharmaceuticals, Inc."
+  },
+  {
+    "id": 285,
+    "name": "Gemcitabine Hydrochloride",
+    "price": 4365,
+    "manufacturer": "Bausch & Lomb Incorporated"
+  },
+  {
+    "id": 286,
+    "name": "Metformin Hydrochloride",
+    "price": 3927,
+    "manufacturer": "Preferred Pharmaceuticals, Inc."
+  },
+  {
+    "id": 287,
+    "name": "Head and Shoulders",
+    "price": 3176,
+    "manufacturer": "Ventura International LTD."
+  },
+  {
+    "id": 288,
+    "name": "Risperidone",
+    "price": 4485,
+    "manufacturer": "Cantrell Drug Company"
+  },
+  {
+    "id": 289,
+    "name": "Anastrozole",
+    "price": 4376,
+    "manufacturer": "American Health Packaging"
+  },
+  {
+    "id": 290,
+    "name": "Cefazolin",
+    "price": 4082,
+    "manufacturer": "Eagle Pharmaceuticals, Inc."
+  },
+  {
+    "id": 291,
+    "name": "Up and Up Miconazole 3",
+    "price": 3412,
+    "manufacturer": "Target Corporation"
+  },
+  {
+    "id": 292,
+    "name": "Childrens",
+    "price": 4123,
+    "manufacturer": "American Health Packaging"
+  },
+  {
+    "id": 293,
+    "name": "Lbel",
+    "price": 4832,
+    "manufacturer": "Ventura International LTD."
+  },
+  {
+    "id": 294,
+    "name": "Hydrochlorothiazide",
+    "price": 3187,
+    "manufacturer": "Cardinal Health"
+  },
+  {
+    "id": 295,
+    "name": "Terbinafine Hydrochloride",
+    "price": 4723,
+    "manufacturer": "Bausch & Lomb Incorporated"
+  },
+  {
+    "id": 296,
+    "name": "Cyclobenzaprine Hydrochloride",
+    "price": 4389,
+    "manufacturer": "Preferred Pharmaceuticals, Inc."
+  },
+  {
+    "id": 297,
+    "name": "Valsartan and Hydrochlorothiazide",
+    "price": 3865,
+    "manufacturer": "Cardinal Health"
+  },
+  {
+    "id": 298,
+    "name": "Cyclophosphamide",
+    "price": 4376,
+    "manufacturer": "McKesson"
+  },
+  {
+    "id": 299,
+    "name": "Relax",
+    "price": 3412,
+    "manufacturer": "Tropical Seas, Inc."
+  },
+  {
+    "id": 300,
+    "name": "Metformin Hydrochloride",
+    "price": 4176,
+    "manufacturer": "Preferred Pharmaceuticals, Inc."
+  },
+  {
+    "id": 301,
+    "name": "BareMinerals Golden Tan matte",
+    "price": 3829,
+    "manufacturer": "Bare Escentuals Beauty Inc."
+  },
+  {
+    "id": 302,
+    "name": "Relax",
+    "price": 2187,
+    "manufacturer": "Tropical Seas, Inc."
+  },
+  {
+    "id": 303,
+    "name": "Valacyclovir Hydrochloride",
+    "price": 3912,
+    "manufacturer": "Rite Aid Corporation"
+  },
+  {
+    "id": 304,
+    "name": "BareMinerals Golden Tan matte",
+    "price": 4698,
+    "manufacturer": "Bare Escentuals Beauty Inc."
+  },
+  {
+    "id": 305,
+    "name": "Metformin Hydrochloride",
+    "price": 3927,
+    "manufacturer": "Preferred Pharmaceuticals, Inc."
+  },
+  {
+    "id": 306,
+    "name": "SILVER SULFADIAZINE",
+    "price": 3379,
+    "manufacturer": "Ventura International LTD."
+  },
+  {
+    "id": 307,
+    "name": "Zantac",
+    "price": 3712,
+    "manufacturer": "Preferred Pharmaceuticals, Inc."
+  },
+  {
+    "id": 308,
+    "name": "Cyclosporine",
+    "price": 4097,
+    "manufacturer": "Taro Pharmaceuticals U.S.A., Inc."
+  },
+  {
+    "id": 309,
+    "name": "Bactroban",
+    "price": 4567,
+    "manufacturer": "Bausch & Lomb Incorporated"
+  },
+  {
+    "id": 310,
+    "name": "Metformin Hydrochloride",
+    "price": 2129,
+    "manufacturer": "Preferred Pharmaceuticals, Inc."
+  },
+  {
+    "id": 311,
+    "name": "Propafenone Hydrochloride",
+    "price": 2786,
+    "manufacturer": "Cantrell Drug Company"
+  },
+  {
+    "id": 312,
+    "name": "Paroxetine",
+    "price": 3405,
+    "manufacturer": "Cantrell Drug Company"
+  },
+  {
+    "id": 313,
+    "name": "Duloxetine Hydrochloride",
+    "price": 4432,
+    "manufacturer": "McKesson"
+  },
+  {
+    "id": 314,
+    "name": "TOLNAFTATE",
+    "price": 3632,
+    "manufacturer": "Ventura International LTD."
+  },
+  {
+    "id": 315,
+    "name": "Gemcitabine Hydrochloride",
+    "price": 4178,
+    "manufacturer": "American Health Packaging"
+  },
+  {
+    "id": 316,
+    "name": "Valsartan and Hydrochlorothiazide",
+    "price": 2912,
+    "manufacturer": "Cardinal Health"
+  },
+  {
+    "id": 317,
+    "name": "Up and Up Lansoprazole",
+    "price": 1739,
+    "manufacturer": "Target Corporation"
+  },
+  {
+    "id": 318,
+    "name": "Cyclophosphamide",
+    "price": 3432,
+    "manufacturer": "Steris Corporation"
+  }
 
 
  ]

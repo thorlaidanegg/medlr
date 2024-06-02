@@ -1,13 +1,16 @@
 'use client'
 import { Data } from '../../public/MOCK_DATA.json';
-import React from "react";
+import React, { useMemo, useState } from "react";
 import { useTable, useSortBy, usePagination } from "react-table";
 
 
 function App() {
   
-  const data = React.useMemo(() => Data, []);
-  const [records, setRecords] = React.useState(data);
+  const data = useMemo(() => Data, []);
+  const [records, setRecords] = useState(data);
+  const [minPrice, setMinPrice] = useState('');
+  const [maxPrice, setMaxPrice] = useState('');
+  const [manufacturer, setManufacturer] = useState('');
   const columns = React.useMemo(
     () => [
       {
@@ -33,6 +36,22 @@ function App() {
   const filter = (e) => {
     const searchText = e.target.value.toLowerCase();
     setRecords(data.filter(f => f.name.toLowerCase().startsWith(searchText)));
+
+    let filteredData = data;
+
+    if (minPrice !== '') {
+      filteredData = filteredData.filter(item => item.price >= parseInt(minPrice));
+    }
+
+    if (maxPrice !== '') {
+      filteredData = filteredData.filter(item => item.price <= parseInt(maxPrice));
+    }
+
+    if (manufacturer !== '') {
+      filteredData = filteredData.filter(item => item.manufacturer.toLowerCase().includes(manufacturer.toLowerCase()));
+    }
+
+    setRecords(filteredData);
   };
 
   const {
@@ -48,17 +67,57 @@ function App() {
     state:{pageIndex},
     pageCount,
     gotoPage
-  } = useTable({ columns, data: records }, useSortBy, usePagination);
+  } = useTable({ columns, data: records,initialState:{pageSize: 6} }, useSortBy, usePagination);
 
   return (
     <div className="App">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+        <h1 className="text-2xl text-pretty ">Search By Name:</h1>
         <input
           type="text"
           className="w-full p-2 mb-7 bg-gray-300 rounded-lg shadow-md"
           onChange={filter}
           placeholder="Search by name..."
         />
+        <h1 className=" text-pretty text-2xl">Filter:</h1>
+
+        <div className="flex flex-col sm:flex-row justify-between items-center mb-8">
+          <div className="w-full sm:w-auto mb-4 sm:mb-0">
+            <input
+              type="text"
+              className="w-full p-2 mb-2 sm:mb-0 bg-gray-300 rounded-lg shadow-md"
+              onChange={(e) => setManufacturer(e.target.value)}
+              value={manufacturer}
+              placeholder="Search by manufacturer..."
+            />
+          </div>
+          <div className="w-full sm:w-auto mb-4 sm:mb-0">
+            <input
+              type="number"
+              className="w-full p-2 mb-2 sm:mb-0 bg-gray-300 rounded-lg shadow-md"
+              onChange={(e) => setMinPrice(e.target.value)}
+              value={minPrice}
+              placeholder="Min Price"
+            />
+          </div>
+          <div className="w-full sm:w-auto mb-4 sm:mb-0">
+            <input
+              type="number"
+              className="w-full p-2 mb-2 sm:mb-0 bg-gray-300 rounded-lg shadow-md"
+              onChange={(e) => setMaxPrice(e.target.value)}
+              value={maxPrice}
+              placeholder="Max Price"
+            />
+          </div>
+          <button
+            className="px-5 py-2 rounded-lg bg-blue-800 hover:bg-blue-400 text-white sm:ml-4"
+            onClick={filter}
+          >
+            Apply Filters
+          </button>
+        </div>
+
+
         <table
           {...getTableProps()}
           className="table-fixed w-full rounded-lg overflow-hidden shadow-md"
