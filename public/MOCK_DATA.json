@@ -1,4 +1,7 @@
-[{"id":1,"name":"Metoprolol Tartrate","price":4811,"manufacturer":"Aurolife Pharma LLC"},
+{
+    "Data": 
+    [
+        {"id":1,"name":"Metoprolol Tartrate","price":4811,"manufacturer":"Aurolife Pharma LLC"},
 {"id":2,"name":"Caverject","price":217,"manufacturer":"Pharmacia and Upjohn Company"},
 {"id":3,"name":"Heparin Sodium","price":2236,"manufacturer":"Cantrell Drug Company"},
 {"id":4,"name":"LBEL Couleur Luxe Rouge Amplifier XP amplifying SPF 15","price":1000,"manufacturer":"Ventura Corporation LTD"},
@@ -997,4 +1000,7 @@
 {"id":997,"name":"Lovastatin","price":2250,"manufacturer":"Mylan Institutional Inc."},
 {"id":998,"name":"Fluconazole","price":1776,"manufacturer":"Aurobindo Pharma Limited"},
 {"id":999,"name":"Lansoprazole","price":4258,"manufacturer":"Aidarex Pharmaceuticals LLC"},
-{"id":1000,"name":"BIOFREEZE","price":3019,"manufacturer":"Performance Health LLC"}]
+{"id":1000,"name":"BIOFREEZE","price":3019,"manufacturer":"Performance Health LLC"}
+
+    ]
+}
