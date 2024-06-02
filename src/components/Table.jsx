@@ -125,12 +125,13 @@ function App() {
             <thead>
               {headerGroups.map((headerGroup) => (
                 <tr
+                  key={headerGroup.id} // Unique key for headerGroup
                   {...headerGroup.getHeaderGroupProps()}
                   className="bg-blue-900 text-white "
                 >
                   {headerGroup.headers.map((column) => (
                     <th
-                      key={column.id} // Use column.id as the key
+                      key={column.id} // Unique key for column
                       {...column.getHeaderProps(column.getSortByToggleProps())}
                       className="p-3 text-left"
                     >
@@ -144,12 +145,12 @@ function App() {
               ))}
             </thead>
             <tbody {...getTableBodyProps()}>
-              {page.map((row) => {
+              {page.map((row, index) => { // Add index parameter
                 prepareRow(row);
                 return (
-                  <tr key={row.id} {...row.getRowProps()} className="hover:bg-slate-50">
+                  <tr key={index} {...row.getRowProps()} className="hover:bg-slate-50"> {/* Unique key for row */}
                     {row.cells.map((cell) => (
-                      <td key={cell.column.id} // Use cell.column.id as the key
+                      <td key={cell.column.id} // Unique key for cell
                         {...cell.getCellProps()}
                         className="p-4"
                         style={{ backgroundColor: "#E2F0CB" }}
