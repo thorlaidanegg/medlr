@@ -35,24 +35,26 @@ function App() {
 
   const filter = (e) => {
     const searchText = e.target.value.toLowerCase();
-    setRecords(data.filter(f => f.name.toLowerCase().startsWith(searchText)));
-
-    let filteredData = data;
-
+    const filteredData = data.filter(f => f.name.toLowerCase().startsWith(searchText));
+  
+  
+    let filteredRecords = filteredData;
+  
     if (minPrice !== '') {
-      filteredData = filteredData.filter(item => item.price >= parseInt(minPrice));
+      filteredRecords = filteredRecords.filter(item => item.price >= parseInt(minPrice));
     }
-
+  
     if (maxPrice !== '') {
-      filteredData = filteredData.filter(item => item.price <= parseInt(maxPrice));
+      filteredRecords = filteredRecords.filter(item => item.price <= parseInt(maxPrice));
     }
-
+  
     if (manufacturer !== '') {
-      filteredData = filteredData.filter(item => item.manufacturer.toLowerCase().includes(manufacturer.toLowerCase()));
+      filteredRecords = filteredRecords.filter(item => item.manufacturer.toLowerCase().includes(manufacturer.toLowerCase()));
     }
-
-    setRecords(filteredData);
+  
+    setRecords(filteredRecords); 
   };
+  
 
   const {
     getTableProps,
@@ -79,6 +81,7 @@ function App() {
           onChange={filter}
           placeholder="Search by name..."
         />
+
         <h1 className=" text-pretty text-2xl">Filter:</h1>
 
         <div className="flex flex-col sm:flex-row justify-between items-center mb-8">
